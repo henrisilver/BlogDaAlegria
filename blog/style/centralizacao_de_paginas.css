@@ -1,0 +1,64 @@
+body {
+  margin:0;
+  padding:0;
+  background:#ccc;
+  text-align: center; /* hack para o IE */	
+  font-family: Century Gothic, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#all {
+  width: 870px;
+  margin:0 auto;			
+  padding: 10px;
+  text-align:left; /* "remedio" para o hack do IE */	
+}
+#cont {
+  padding: 5px;
+  min-height: 400px; 
+  background-color: white;
+	border: 1px solid #000000;
+	-moz-border-radius: 10px; /* borda arredondada no firefox */
+	padding: 10px;
+}
+#fim{
+  text-align:right;
+}
+#menu ul {
+padding:0px;
+margin:0px;
+float: left;
+width: 100%;
+background-color:#EDEDED;
+list-style:none;
+}
+#menu ul li { display: inline; }
+#menu ul li a {
+padding: 2px 10px;
+float:left;
+/* visual do link */
+background-color:#EDEDED;
+color: #333;
+text-decoration: none;
+border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+background-color:#D6D6D6;
+color: #6D6D6D;
+border-bottom:3px solid #EA0000;
+}
+
+h1 {
+  text-align:center;
+}
+h3 {
+  text-align:center;
+}
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color:blue;
+}
+a:hover {
+	text-decoration: none; 
+	color: black;
+}
+
