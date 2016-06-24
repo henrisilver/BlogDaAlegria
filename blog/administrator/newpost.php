@@ -50,6 +50,9 @@
 		$pub = $users->id;
 		$title = $_POST['title'];
 		$content = $_POST['content'];
+        $pub = htmlentities($pub);
+        $title = htmlentities($title);
+        $content = htmlentities($content);
 				
 		if ( mysql_query("insert into posts (user_id, title, content) values ('$pub', '$title', '$content')"))
 		{
