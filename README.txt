@@ -12,7 +12,7 @@ Grupo:
 Organização do projeto:
 -> Relatório: Trabalho2Proposta1.pdf
 -> blog: diretório com arquivos corrigidos de modo a evitar vulnerabilidades
--> README.txt - este documento
+-> README.txt: este documento
 
 Arquivos do blog que foram modificados:
 	- blog/administrador/newpost.php
