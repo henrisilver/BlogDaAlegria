@@ -46,7 +46,13 @@
 				$pes = mysql_query("SELECT p.id AS post_id, p.user_id AS post_user_id, p.title AS post_title, p.content AS post_content, p.date AS post_date,
 					u.email AS user_email, u.name AS user_name FROM posts p join users u on p.user_id = u.id");
 
-				
+				$post_id = htmlentities($post_id);
+				$post_user_id = htmlentities($post_user_id);
+				$post_title = htmlentities($post_title);
+				$post_content = htmlentities($post_content);
+				$post_date = htmlentities($post_date);
+				$user_email = htmlentities($user_email);
+				$user_name = htmlentities($user_name);
 				if (mysql_num_rows($pes) == 0){
 					echo "<p>Nenhum post encontrado.</p>";
 				}else {

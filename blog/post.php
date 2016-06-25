@@ -48,11 +48,19 @@
 			
 				$pes = mysql_query("SELECT p.id AS post_id, p.user_id AS post_user_id, p.title AS post_title, p.content AS post_content, p.date AS post_date,
 					u.email AS user_email, u.name AS user_name FROM posts p join users u on p.user_id = u.id WHERE p.id = ".$id);
-				
+
 				if (mysql_num_rows($pes) == 0){
 					echo "<p>Nenhum post encontrado.</p>";
 				}else {
 					while($row = mysql_fetch_array($pes)){
+						$post_id = htmlentities($post_id);
+						$post_user_id = htmlentities($post_user_id);
+						$post_title = htmlentities($post_title);
+						$post_content = htmlentities($post_content);
+						$post_date = htmlentities($post_date);
+						$user_email = htmlentities($user_email);
+						$user_name = htmlentities($user_name);
+
 						$post = new post($row['post_id'], $row['post_user_id'], $row['user_email'], $row['user_name'], $row['post_title'], $row['post_content'], $row['post_date']);
 
 						?>
